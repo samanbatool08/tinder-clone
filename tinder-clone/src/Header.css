@@ -1,12 +1,17 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #f9f9f9;
 }
 
 /* BEM classname structure */
 .header__logo {
     height: 40px;
-    /* keeps image from looking distorted based on height/width */
+    /* keeps image from looking distorted based on height/width; locks in resolution*/
     object-fit: contain;
+}
+
+.header__icon {
+    padding: 20px;
 }
