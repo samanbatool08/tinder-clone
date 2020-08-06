@@ -1,5 +1,6 @@
 import React from 'react';
 import TinderCard from 'react-tinder-card'
+import './TinderCards.css';
 
 function TinderCards() {
 
@@ -28,7 +29,7 @@ function TinderCards() {
                         > 
                          
                         <div 
-                            style={{ backgroundImage: `url(${person.url})` }}
+                            style={{ backgroundImage: `url(${person.url})`, backgroundRepeat: 'no-repeat' }}
                             className='card'>
                                 <h3>{person.name}</h3>
                         </div>
