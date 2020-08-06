@@ -1,4 +1,12 @@
 .header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+/* BEM classname structure */
+.header__logo {
+    height: 40px;
+    /* keeps image from looking distorted based on height/width */
+    object-fit: contain;
 }

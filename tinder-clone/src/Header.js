@@ -3,12 +3,17 @@ import './Header.css';
 import PersonIcon from '@material-ui/icons/Person';
 import ForumIcon from '@material-ui/icons/Forum';
 
-function Header() {
+const Header = () => {
+// function Header() {
+
     return (
         // BEM 
         <div className='header'>
             <PersonIcon />
-            <h1>I am a Header</h1>
+            <img 
+                className="header__logo"
+                src='https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png' 
+                alt='tinder logo' />
             <ForumIcon />
         </div>
     )
