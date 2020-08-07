@@ -1,0 +1,7 @@
+.chatScreen__message {
+    display: flex;
+}
+
+.chatScreen__text {
+    margin-left: 10px;
+}
