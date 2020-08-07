@@ -29,7 +29,6 @@ function TinderCards() {
                         // prevent swipe up/down
                         preventSwipe={['up', 'down']}
                         > 
-                         
                         <div 
                             style={{ backgroundImage: `url(${person.url})`, backgroundRepeat: 'no-repeat' }}
                             className='card'>
