@@ -3,6 +3,7 @@ import Header from './Header';
 import TinderCards from './TinderCards';
 import SwipeButtons from './SwipeButtons';
 import Chats from './Chats';
+import ChatScreen from './ChatScreen';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
@@ -14,8 +15,7 @@ function App() {
 
       <Route path='/chats/:person'>
           <Header backButton='/chats' />
-            <Chats />
-            <h1>it worksss</h1>
+            <ChatScreen />
         </Route>
 
       <Route path='/chats'>
