@@ -10,12 +10,18 @@ function TinderCards() {
 
     // runs based on a conditional
     useEffect(() => {
-        database.collection('people').onSnapshot(snapshot => (
+        const unsubscribe = database
+        .collection('people')
+        .onSnapshot(snapshot => (
             setPeople(snapshot.docs.map(doc => doc.data()))
-        ))
+        ));
 
+        return () => {
+            //cleanup...
+            unsubscribe();
+        }
         // keeping the dependency blank will run the code only once when the page loads 
-    }, [])
+    }, [people])
 
     return(
         <div>
