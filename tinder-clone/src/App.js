@@ -9,13 +9,15 @@ function App() {
   return (
     <div className="App">
     <Router>
-      <Header />
+      {/* <Header /> */}
       <Switch>
       <Route path='/chats'>
+          <Header backButton='/' />
           <h1>I am the chatpage</h1>
         </Route>
 
         <Route path='/'>
+          <Header />
           <TinderCards />
           <SwipeButtons />
         </Route>
