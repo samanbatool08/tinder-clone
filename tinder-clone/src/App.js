@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
     <Router>
-      {/* <Header /> */}
       <Switch>
       <Route path='/chats'>
           <Header backButton='/' />
