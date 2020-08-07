@@ -8,10 +8,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Header />
     <Router>
+      <Header />
       <Switch>
-      <Route path='/chat'>
+      <Route path='/chats'>
           <h1>I am the chatpage</h1>
         </Route>
 
