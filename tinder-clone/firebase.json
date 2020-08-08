@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build",
+    "public": "build/tinder-clone",
     "ignore": [
       "firebase.json",
       "**/.*",
