@@ -21,8 +21,10 @@ function ChatScreen() {
     ])
     return (
         <div className='chatScreen'>
-            <p>YOU MATCHED WITH ELLEN ON 10/09/20</p>
+            <p className='chatScreen__timestamp'>YOU MATCHED WITH ELLEN ON 10/09/20</p>
             {messages.map(message => (
+                // if the message contains a name add the icon - if not this means that it is the user that is typing
+                message.name ? (
                 <div className='chatScreen__message'>
                     <Avatar 
                         className='chatScreen__image'
@@ -30,7 +32,12 @@ function ChatScreen() {
                         src={message.image}
                     />
                     <p className='chatScreen__text'>{message.message}</p>
-                </div>
+                </div> ) 
+                : (
+                <div className='chatScreen__message'>
+                    <p className='chatScreen__text'>{message.message}</p>
+                </div> )
+
             ))}
         </div>
     )
