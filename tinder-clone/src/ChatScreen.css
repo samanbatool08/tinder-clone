@@ -16,3 +16,16 @@
     padding: 20px;
     color: gray;
 }
+
+.chatScreen__textUser {
+    /* push to right */
+    margin-left: auto;
+    background-color: #29b3cd;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+/* colors */
+/* 29b3cd tinder blue */
