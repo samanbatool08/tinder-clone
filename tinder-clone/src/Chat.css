@@ -22,3 +22,11 @@
 .chat__image {
     margin-right: 20px;
 }
+
+/* override generic link styling */
+a {
+    /* remove underline */
+    text-decoration: none;
+    /* remove blue */
+    color: inherit;
+}
