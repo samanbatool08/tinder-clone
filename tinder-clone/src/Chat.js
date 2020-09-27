@@ -19,3 +19,5 @@ function Chat({ name, message, timestamp, profilePic }) {
 }
 
 export default Chat;
+
+// import chatscreen css
